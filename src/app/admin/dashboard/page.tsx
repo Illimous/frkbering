@@ -119,14 +119,30 @@ export default function AdminDashboard() {
     setSendingStatus({ loading: true });
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setSendingStatus({
-        loading: false,
-        success: true,
+      // Send test email med skabelonen
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: testEmail,
+          subject: template.subject,
+          html: template.content,
+        }),
       });
-      setTimeout(() => {
-        setSendingStatus({ loading: false });
-      }, 3000);
+
+      if (response.ok) {
+        setSendingStatus({
+          loading: false,
+          success: true,
+        });
+        setTimeout(() => {
+          setSendingStatus({ loading: false });
+        }, 3000);
+      } else {
+        throw new Error('Kunne ikke sende email');
+      }
     } catch {
       setSendingStatus({
         loading: false,
