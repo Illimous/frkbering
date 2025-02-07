@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '../../prisma/generated/client';
 import { sql } from '@vercel/postgres';
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
