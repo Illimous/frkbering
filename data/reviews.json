@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Maria Hansen",
+    "title": "Privat klient",
+    "text": "Line har en helt særlig evne til at se og mærke præcis, hvad der rører sig. Hendes indsigter har hjulpet mig til at se nye muligheder og tage vigtige beslutninger i mit liv.",
+    "date": "Februar 2024",
+    "status": "approved"
+  },
+  {
+    "id": "2",
+    "name": "Peter Nielsen",
+    "title": "Virksomhedsejer",
+    "text": "Som virksomhedsejer har Lines clairvoyante business konsultationer givet mig et unikt perspektiv på både udfordringer og muligheder i min virksomhed. Hendes kombination af forretningsmæssig indsigt og intuitive evner er helt unik.",
+    "date": "Januar 2024",
+    "status": "approved"
+  },
+  {
+    "name": "lukaz",
+    "title": "privat",
+    "text": "perfekt udførsel og gelant\n",
+    "date": "februar 2025",
+    "status": "approved",
+    "id": "1738945671556"
+  },
+  {
+    "name": "test ",
+    "title": "test",
+    "text": "testetstetewtejmsgf-lb",
+    "date": "februar 2025",
+    "status": "approved",
+    "id": "1738946235563"
+  }
+]
