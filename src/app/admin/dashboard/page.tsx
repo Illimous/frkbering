@@ -119,7 +119,6 @@ export default function AdminDashboard() {
     setSendingStatus({ loading: true });
 
     try {
-      // Send test email med skabelonen
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
