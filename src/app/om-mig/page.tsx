@@ -38,7 +38,7 @@ export default function AboutMe() {
 
               <div className="space-y-6">
                 <p className="text-xl text-[#6C6C75] leading-relaxed font-light italic">
-                  "Jeg brænder for at hjælpe mennesker og virksomheder med at opdage deres fulde potentiale og skabe balance og indsigt gennem både intuition og praktisk erfaring."
+                  &ldquo;Jeg brænder for at hjælpe mennesker og virksomheder med at opdage deres fulde potentiale og skabe balance og indsigt gennem både intuition og praktisk erfaring.&rdquo;
                 </p>
                 <div className="w-16 h-1 bg-[#59585E]/20"></div>
                 <p className="text-lg text-[#6C6C75] leading-relaxed font-light">

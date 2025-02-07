@@ -32,7 +32,7 @@ export default function SkrivAnmeldelse() {
       } else {
         alert('Der skete desværre en fejl. Prøv venligst igen.');
       }
-    } catch (error) {
+    } catch {
       alert('Der skete desværre en fejl. Prøv venligst igen.');
     }
   };
@@ -70,7 +70,7 @@ export default function SkrivAnmeldelse() {
             </div>
 
             <div>
-              <label htmlFor="title" className="block text-[#59585E] mb-2">Din titel (f.eks. "Privat klient")</label>
+              <label htmlFor="title" className="block text-[#59585E] mb-2">Din titel (f.eks. &ldquo;Privat klient&rdquo;)</label>
               <input
                 type="text"
                 id="title"

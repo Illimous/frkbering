@@ -75,20 +75,14 @@ export default function EmailTemplates() {
     setSendingStatus({ loading: true });
 
     try {
-      // Simuler en forsinkelse på 1 sekund
       await new Promise(resolve => setTimeout(resolve, 1000));
-
-      // Simuler en vellykket afsendelse
       setSendingStatus({
         loading: false,
         success: true,
       });
-
-      // Nulstil success message efter 3 sekunder
       setTimeout(() => {
         setSendingStatus({ loading: false });
       }, 3000);
-
     } catch {
       setSendingStatus({
         loading: false,

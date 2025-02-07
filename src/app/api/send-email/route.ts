@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 
 export async function POST(request: Request) {
   try {
-    const { to, subject, html, template } = await request.json();
+    const { to, subject, html } = await request.json();
 
     // Valider input
     if (!to || !subject || !html) {
